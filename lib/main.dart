@@ -1,5 +1,6 @@
 import 'package:cau_dermato/UI/screens/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'router.dart' as router;
 
 void main() => runApp(MyApp());
 
@@ -28,7 +29,11 @@ class MyApp extends StatelessWidget {
         primaryColorLight: primaryColorLight,
         primaryColorDark: primaryColorDark,
         accentColor: Color(0xffffcdd2),
+        // textTheme: TextTheme(
+
+        // ),
       ),
+      onGenerateRoute: router.generateRoute,
       // home: MyHomePage(title: 'Dra. Cláudia Cherinn'),
       home: HomeScreen(),
     );
